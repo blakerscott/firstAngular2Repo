@@ -1,5 +1,6 @@
 import { Component, EventEmitter } from 'angular2/core';
 import { TaskListComponent } from './task-list.component';
+import { Task } from './task.model';
 
 @Component({
   selector: 'my-app',
@@ -26,12 +27,5 @@ export class AppComponent {
   }
   taskWasSelected(clickedTask: Task): void {
     console.log('parent', clickedTask);
-  }
-}
-
-export class Task {
-  public done: boolean = false;
-  constructor(public description: string, public id: number) {
-
   }
 }
