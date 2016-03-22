@@ -3,10 +3,10 @@ import { Component } from 'angular2/core';
 @Component({
   selector: 'my-app',
   template: `
-    <div class="container">
-      <h1>To-Do List</h1>
-      <h3 *ngFor="#task of tasks">{{ task.description }}</h3>
-    </div>
+  <div *ngFor="#task of tasks">
+<h3>{{ task.description }}</h3>
+<h4> Hi, I'm another nested HTML element. There are 4 copies of me because we have 4 tasks.</h4>
+</div>
   `
 })
 export class AppComponent {
