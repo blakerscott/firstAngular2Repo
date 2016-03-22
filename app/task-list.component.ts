@@ -1,3 +1,6 @@
+import { Component, EventEmitter } from 'angular2/core';
+import { TaskComponent } from './task.component';
+
 @Component({
   selector: 'task-list',
   inputs: ['taskList'],

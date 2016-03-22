@@ -1,4 +1,5 @@
 import { Component, EventEmitter } from 'angular2/core';
+import { TaskListComponent } from './task-list.component';
 
 @Component({
   selector: 'my-app',
