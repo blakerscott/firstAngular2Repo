@@ -5,6 +5,7 @@ import {Task} from './task.model';
   selector: 'edit-task-details',
   inputs: ['task'],
   template: `
+  <h3>Edit Description: {{ task.description }}</h3>
   `
 })
 export class EditTaskDetailsComponent {
